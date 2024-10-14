@@ -18,13 +18,13 @@ public class DanhMucController {
     @GetMapping("/index")
     public String hienThi(Model model) {
         model.addAttribute("dsdm", dmRepo.findAll());
-        return "danh_muc/index";
+        return "SanPham/danh_muc/index";
     }
     @GetMapping("/detail/{id}")
     public String detail(@PathVariable("id") Integer id, Model model){
         model.addAttribute("data1",dmRepo.findById(id).get());
         model.addAttribute("data",dmRepo.findAll());
-        return "danh_muc/index";
+        return "SanPham/danh_muc/index";
     }
     @PostMapping("add")
     public String add(DanhMuc dm){

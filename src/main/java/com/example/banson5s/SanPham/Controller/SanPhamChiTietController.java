@@ -15,6 +15,6 @@ public class SanPhamChiTietController {
     @GetMapping("/index")
     public String hienThi(Model model) {
         model.addAttribute("dsspct", spctRepo.findAll());
-        return "san_pham_chi_tiet/index";
+        return "SanPham/san_pham_chi_tiet/index";
     }
 }

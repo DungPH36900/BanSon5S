@@ -20,13 +20,13 @@ public class XuatXuController {
     @GetMapping("/index")
     public String hienThi(Model model) {
         model.addAttribute("dsxx", xxRepo.findAll());
-        return "xuat_xu/index";
+        return "SanPham/xuat_xu/index";
     }
     @GetMapping("/detail/{id}")
     public String detail(@PathVariable("id") Integer id, Model model){
         model.addAttribute("data1",xxRepo.findById(id).get());
         model.addAttribute("data",xxRepo.findAll());
-        return "xuat_xu/index";
+        return "SanPham/xuat_xu/index";
     }
     @PostMapping("add")
     public String add(XuatXu xx){
