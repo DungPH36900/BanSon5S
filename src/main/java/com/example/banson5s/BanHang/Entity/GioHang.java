@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -36,6 +38,9 @@ public class GioHang {
 
     @Column(name = "trang_thai")
     private Integer trangThai;
+//    public void setTongTien(BigDecimal tongTien) {
+//        this.tongTien = tongTien;
+//    }
 
     // Getters và Setters
 }
