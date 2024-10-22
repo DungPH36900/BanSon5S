@@ -172,7 +172,7 @@
     </div>
 </div>
 
-<script type="text/javascript" src="${pageContext.request.contextPath}/view/ChucNang/PhieuGiamGia/pgg.js"></script>
-
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/ChucNang/pgg.js"></script>
+<jsp:include page="../../../includes/footer.jsp"/>
 </body>
 </html>
