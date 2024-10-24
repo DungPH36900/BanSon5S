@@ -59,7 +59,7 @@ public class HoaDonController {
         model.addAttribute("dskh", khachHangRepo.findAll());
         model.addAttribute("dsnv", nhanVienRepo.findAll());
         model.addAttribute("dspttt", ptttRepo.findAll());
-        return "hoaDonDetail";
+        return "/HoaDon/hoaDonDetail";
     }
 
     @PostMapping("/hien-thi/hoa-don/update")

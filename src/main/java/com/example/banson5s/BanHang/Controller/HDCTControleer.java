@@ -42,7 +42,7 @@ public class HDCTControleer {
         model.addAttribute("hdct", hdctRepo.findById(id).get());
         model.addAttribute("dshd", hoaDonRepo.findAll());
         model.addAttribute("dsspct", spctRepo.findAll());
-        return "hdctDetail";
+        return "/HoaDon/hdctDetail";
     }
 
     @PostMapping("/hien-thi/hoa-don-ct/update")
